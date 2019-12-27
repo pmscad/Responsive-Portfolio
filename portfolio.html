@@ -1,55 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--  Required meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <title>portfolio-gallery</title>
     <link rel="stylesheet" href="assets/css/portfolio.css" />
   </head>
 
   <body>
-      <header>
+    <!-- start navbar -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light"
+      >
         <div class="container">
-          <div class="logo"> Vikramjeet Multani</div>
-            <ul class="nav-links">
-              <li><a href="index.html">About</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
+          <div class="logo navbar-brand">Vikramjeet Multani</div>
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"
+                >About <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-      </header>
+      </nav>
+    </header>
 
+    <!-- end navbar -->
 
-      <div class="portfolio">
-        <div class="portfolio-container">
-          <div class="portfolio-h1">
-            <h1>Portfolio</h1>
+    <!-- start portfolio -->
+    <div class="portfolio">
+      <div class="container">
+        <div class="portfolio-h1">
+          <h1>Portfolio</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <img src="assets/images/Back-End.png" />
+            <figcaption><span>Back-End</span></figcaption>
           </div>
+          <div class="col-sm">
+            <img src="assets/images/Front-End.png" />
+            <figcaption><span>Front-End</span></figcaption>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <img src="assets/images/MERN-Stack.jpeg" />
+            <figcaption><span>MERN-Stack</span></figcaption>
+          </div>
+          <div class="col-sm">
+            <img src="assets/images/Client-Server.png" />
+            <figcaption><span>Client-Server</span></figcaption>
+          </div>
+        </div>
 
-            <div class="frame">
-              <img src="assets/images/Back-End.png" alt="img1" />
-            </div>
-            <div class="frame">
-              <img src="assets/images/Front-End.png" alt="img2" />
-            </div>
-            <div class="frame">
-              <img src="assets/images/MERN-Stack.jpeg" alt="img3" />
-            </div>
-            <div class="frame">
-              <img src="assets/images/Client-Server.png" alt="img4" />
-            </div>
-            <div class="frame">
-              <img src="assets/images/MEAN-Stack.png " alt="img5" />
-            </div>
-
+        <div class="row">
+          <div class="col-sm">
+            <img src="assets/images/MEAN-Stack.png " />
+            <figcaption><span>MEAN-Stack</span></figcaption>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- end portfolio -->
 
-    <footer>Copyright</footer>
+    <footer>
+      &copy; Copyright 2019 Vikramjeet Multani
+    </footer>
   </body>
 </html>
-
-
-assets/images/MEAN-Stack.png

@@ -1,42 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="assets/css/index.css" />
+    <title>Portfolio</title>
   </head>
+
   <body>
+    <!-- start navbar -->
     <header>
-      <div class="container">
-        <div class="logo">Vikramjeet Multani</div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+      <nav
+        class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light"
+      >
+        <div class="container">
+          <div class="logo navbar-brand">Vikramjeet Multani</div>
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item ">
+              <a class="nav-link active" href="index.html"
+                >About <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
+    <!-- end navbar -->
+    <!-- start main content -->
     <div class="content">
-      <div class="container">
+      <div class="content-container">
         <div class="about">
           <h1>About Me</h1>
         </div>
-        <div class="me">
-          <img src="assets/images/Vikram-1.jpg" alt="Vikram's-Photo" />
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <img
+              src="assets/images/Vikram-1.jpg"
+              alt="Vikram's-Photo"
+              class="me"
+            />
+          </div>
+          <div class="col-sm-6 col-md-8">
+            <p>
+              Hello! I am Vikram from Birmingham. I’m currently a Full Stack
+              coding bootcamp student in Birmingham University. I’m security
+              cleared freelancer originally from Network and Security background
+              worked on various public and private sector customers as a
+              datacentre engineer.
+            </p>
+          </div>
         </div>
-        <p>
-          Hello! I am Vikram from Birmingham. I’m currently a Full Stack coding
-          bootcamp student in Birmingham University. I’m security cleared
-          freelancer originally from Network and Security background worked on
-          various public and private sector customers as a datacentre engineer.
-        </p>
       </div>
     </div>
 
-    <footer>Copyright</footer>
+    <!-- end main content -->
+
+    <footer>
+      &copy; Copyright 2019 Vikramjeet Multani
+    </footer>
   </body>
 </html>
